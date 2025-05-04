@@ -75,3 +75,29 @@ def save_books(self, filename="books.csv"):
         writer = csv.writer(file)
         writer.writerows(book.to_list() for book in self.books)
 ```
+➤ Testing
+
+`test_library.py` uses `unittest` extentions to test core functionalities from `library.py` such as:
+`add_book`, `remove_book`, `load_book` methods, it simulates incorrect occurances with incorrrect inputs:
+```python
+class TestLibrary(unittest.TestCase):
+    def test_remove_book_invalid_index(self):
+        self.library.remove_book(99)
+        self.assertEqual(len(self.library.books), 1)
+```
+Output:
+```cmd
+❌ Invalid index. No book removed.
+```
+# ✅ Results
+- Implemented a role-based library system where managers can add or remove books and users can only view them.
+- Faced challenges with enforcing encapsulation and ensuring private methods weren’t misused by regular users.
+- Encountered difficulties with displaying book information properly and formatting removal messages, but resolved them by refining the __str__ method.
+- Successfully integrated file handling for persistent book storage using CSV files, with the ability to load and save books dynamically.
+- Learned how to apply key OOP concepts (abstraction, inheritance, encapsulation, and polymorphism) in a real-world scenario.
+- The code has troubles in the unit testing area, when methods are called in `test_library.py` file they trigger `save_books` method which makes has a
+connection to the real `books.csv` file, therefore it gets wiped clean after the programme is run. I was unable fix this issue yet.
+
+  
+# 🧾 Conclusions
+This coursework demonstrated a practical understanding of object-oriented programming in Python by building a functional library management system. The final program supports user verification, book storage, and role-based permissions. It effectively uses abstraction and inheritance to differentiate user roles, and encapsulation to protect sensitive methods. Future prospects include adding user registration via email, search functionality, UI integration for better usability, and perhaps a registry system.
