@@ -1,5 +1,5 @@
 # 📚 Library Management System – Coursework Report
-# _1. Introduction_
+## _1. Introduction_
 _What is this application?_
 This application is a simple console-based Library Management System written in Python. It allows users to view available books and managers to add or remove books from the system.
 
@@ -18,7 +18,7 @@ Depending on the role, different actions will be shown:
 
 `Manager`: Add a book; View books; Remove a book; Exit
 
-# ⚙️ 2. Body / Analysis
+## ⚙️ 2. Body / Analysis
 ✅ Functional Requirements & Implementation
 
 ➤ Object-Oriented Programming
@@ -89,7 +89,7 @@ Output:
 ```cmd
 ❌ Invalid index. No book removed.
 ```
-# ✅ Results
+## ✅ Results
 - Implemented a role-based library system where managers can add or remove books and users can only view them.
 - Faced challenges with enforcing encapsulation and ensuring private methods weren’t misused by regular users.
 - Encountered difficulties with displaying book information properly and formatting removal messages, but resolved them by refining the __str__ method.
@@ -99,5 +99,5 @@ Output:
 connection to the real `books.csv` file, therefore it gets wiped clean after the programme is run. I was unable fix this issue yet.
 
   
-# 🧾 Conclusions
+## 🧾 Conclusions
 This coursework demonstrated a practical understanding of object-oriented programming in Python by building a functional library management system. The final program supports user verification, book storage, and role-based permissions. It effectively uses abstraction and inheritance to differentiate user roles, and encapsulation to protect sensitive methods. Future prospects include adding user registration via email, search functionality, UI integration for better usability, and perhaps a registry system.
