@@ -16,7 +16,7 @@ Depending on the role, different actions will be shown:
 
 `User`: View books; Exit.
 
-`Manager`: Add a book; View books; Remove a book; Exit
+`Manager`: Add a book; View books; Remove a book; Exit.
 
 ## ⚙️ 2. Body / Analysis
 ✅ Functional Requirements & Implementation
